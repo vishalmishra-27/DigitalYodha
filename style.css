@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #156eaa;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: #3498db;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #2ecc71;
+}
+
+h1 {
+    color: #ffffff;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+p {
+    width: fit-content;
+    margin: 1rem auto;
+    color: #d8bfbf;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Cyber-Bullying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1>Welcome to our Non-Profit Organization!</h1>
+    <p>Together, we stand against cyber-bullying to create a safer online community.</p>
+    <p>Explore our resources and initiatives to combat digital harassment.</p>
+    <div class="carousel-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel">
+            <img src="img1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="img3.jpg" alt="Image 3">
+            <img src="img4.jpg" alt="Image 4">
+            <img src="img5.jpg" alt="Image 5">
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 DigitalYodhya. All Rights Reserved®.</p>
+    </footer>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide() {
+            const slides = document.querySelector('.carousel');
+            slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < 4) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+            showSlide();
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = 4;
+            }
+            showSlide();
+        }
+    </script>
+</body>
+
+</html>
